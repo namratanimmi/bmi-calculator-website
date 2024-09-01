@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./partials/head.ejs') %>
+</head>
+
+<body style="font-family: 'Comfortaa' ;">
+    <%- include('./partials/nav.ejs') %>
+    <main>
+        <div style="font-family: 'Comfortaa' ;"
+            class=" py-24 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+            <div class=" bg-white font-bad-script mx-48 py-12 flex-col px-48 rounded-lg  ">
+
+                <div class="text-5xl py-5 ">
+                    Body Mass Index (BMI) <br> <span class="text-3xl pt-4 font-semibold"> Table for Adults </span>
+                </div>
+                <div class="pt-4">
+                    <img src="/images/bmi-index-chart.png" alt="bmi-index-chart">
+                </div>
+                <div class="text-lg pt-10">
+                    <p>
+                        This is the World Health Organization's (WHO) recommended BMI values for adults, both men and
+                        women, age 18 or older.
+                    </p>
+                </div>
+                <div>
+                    <p class="py-3  text-lg">
+                        In studies by the National Center for Health Statistics,
+                        People with overweight and obesity have an increased risk of type 2 diabetes, hypertension, and
+                        cardiovascular disease.
+                    </p>
+                </div>
+                <div class="flex  justify-center text-lg ">
+
+                    <div class=" px-20 border-4 rounded-lg py-3 m-10 "><a href="/">Back to BMI Calculator</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="rounded-lg   py-2 mb-1">
+            <%- include('./partials/footer.ejs') %>
+        </footer>
+
+</body>
+
+</html>

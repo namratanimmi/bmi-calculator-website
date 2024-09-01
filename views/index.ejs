@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./partials/head.ejs') %>
+</head>
+
+<body style="font-family: 'Comfortaa' ;">
+    <%- include('./partials/nav.ejs') %>
+        <!-- <ul class="pr-7 flex  py-3 text-xl space-x-7 justify-end pb-4 ">
+            <li class="cursor-pointer px-4">Home</li>
+            <li class="cursor-pointer pl-4 pr-2">About</li>
+            <li class="cursor-pointer px-4">Contact</li>
+        </ul> -->
+
+    <main>
+        <div style="font-family: 'Comfortaa' ;"
+            class="  py-20 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500  ">
+            <div class=" bg-white font-bad-script   mx-40 pb-12 flex-col px-48 rounded-lg  ">
+                <div class="flex justify-center py-9">
+                    <img class="flex justify-between" src="images/bmi.png" alt="logo" height="200px" width="200px">
+                </div>
+                <div class="text-5xl py-5 ">
+                    Body Mass Index (BMI) Calculator
+                </div>
+                <div class="text-lg">
+                    <p>
+                        Body mass index (BMI) is a measure of body fat based on height and weight that applies to adult
+                        men and
+                        women.<br>It is used as a screening tool to identify whether a person has a healthy weight.
+                    </p>
+                </div>
+                <div>
+                    <p class="py-3 font-semibold">
+                        How would you like to enter your weight and height: using standard or metric measures?
+                    </p>
+                </div>
+                <div class="flex  justify-center text-lg ">
+                    <div class="px-20 border-4 rounded-lg  py-3 m-10 "><a href="/check/standard">Standard(ft,lb)</a></div>
+                    <div class=" px-20 border-4 rounded-lg py-3 m-10 "><a href="/check/metrical">Metrical(m,kg)</a></div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="rounded-lg   py-2 mb-1">
+            <%- include('./partials/footer.ejs') %>
+        </footer>
+</body>
+
+</html>
